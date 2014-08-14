@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.musebrain.mathfun"
+    android:versionCode="4"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+    
+    <!-- These permissions are mandatory to run AppLovin SDK -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<!-- These permissions are strongly recommended and will result in higher performance -->
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!--  For google play services -->
+		<meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.musebrain.mathfun.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  
+            android:name=".InstructionActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity  
+            android:name=".PlayActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity  
+            android:name=".HighScoreActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity  
+            android:name=".CongratsActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--  Airpush SDK Integration -->
+        <meta-data 
+		    android:name="com.hcxg.ghuy198595.APPID" 
+		    android:value="232717" />
+		<meta-data 
+		    android:name="com.hcxg.ghuy198595.APIKEY" 
+		    android:value="1407676939198595532"/>
+		<activity 
+		    android:exported="false" 
+		    android:name="com.hcxg.ghuy198595.MainActivity"
+     		android:configChanges="orientation|screenSize"
+			android:theme="@android:style/Theme.Translucent" />
+		<activity 
+		    android:name="com.hcxg.ghuy198595.BrowserActivity"
+			android:configChanges="orientation|screenSize" />
+		<activity 
+		    android:name="com.hcxg.ghuy198595.VDActivity"
+            android:configChanges="orientation|screenSize" 
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+		</activity> 
+    </application>
+</manifest>

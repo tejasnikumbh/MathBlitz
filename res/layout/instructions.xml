@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/backgroundIWant">
+    <RelativeLayout 
+        android:id="@+id/instruction_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/instruction_header" 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <LinearLayout 
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                
+            </LinearLayout>
+ 			<Button 
+    	           android:layout_width="0dp"
+    	           android:layout_height="match_parent"
+    	           android:layout_weight="3"
+    	           android:background="@color/morpankhi"
+    	           android:text="@string/text_instructions"
+    	           android:textColor="@color/White"
+    	           android:textSize="26dp"
+    	           />
+ 			<LinearLayout 
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </LinearLayout>
+    	                     
+ 		</LinearLayout>      
+        <LinearLayout
+            android:id="@+id/instruction_content"
+            android:layout_below="@id/instruction_header" 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            
+        	<TextView 
+            	
+            	android:text="@string/instructions_1"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	/>
+        	<View 
+    			android:layout_width="match_parent"
+    			android:layout_height="15dp">
+    		</View>
+      
+        	<TextView 
+            	
+            	android:text="@string/instructions_2"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	/>
+            <View 
+    			android:layout_width="match_parent"
+    			android:layout_height="15dp">
+    		</View>
+      
+        	<TextView 
+            	android:id="@+id/instructions"
+            	android:text="@string/instructions_3"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	/>
+            <View 
+    			android:layout_width="match_parent"
+    			android:layout_height="15dp">
+    		</View>
+        		 
+        	<TextView 
+            	android:id="@+id/instructions_4"
+            	android:text="@string/instructions_4"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	/>
+        </LinearLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instruction_content"
+            android:id="@+id/instruction_footer"
+            android:padding="10dp">
+
+        	<TextView
+        	    
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentLeft="true"
+        	    android:text="@string/footer_left" />
+
+        </RelativeLayout>
+         <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instruction_footer"
+            android:padding="10dp">
+
+			<ImageView
+			    android:layout_width="45dp"
+			    android:layout_height="45dp"
+			    android:layout_toLeftOf="@+id/signature"
+			    android:contentDescription="Mafia Cat"
+			    android:scaleType="fitXY"
+			    android:src="@drawable/catsign" 
+			    android:layout_marginRight="5dp"/>
+
+			<TextView
+			    android:id="@+id/signature"
+			    android:layout_width="wrap_content"
+			    android:layout_height="45dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginRight="5dp"
+			    android:gravity="center"
+			    android:text="@string/footer_right" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

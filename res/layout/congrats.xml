@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/backgroundIWant">
+    <RelativeLayout 
+        android:id="@+id/congrats_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/congrats_header" 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            
+            <LinearLayout 
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                
+            </LinearLayout>
+ 			<Button 
+    	           android:layout_width="0dp"
+    	           android:layout_height="match_parent"
+    	           android:layout_weight="3"
+    	           android:padding="5dp"
+    	           android:background="@color/morpankhi"
+    	           android:text="@string/text_congrats"
+    	           android:textColor="@color/White"
+    	           android:textSize="24dp"
+    	           />
+ 			<LinearLayout 
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </LinearLayout>
+    	                     
+ 			      
+        </LinearLayout>
+    	<LinearLayout
+    	    android:orientation="vertical"
+    	    android:layout_below="@id/congrats_header"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center">   
+    	    
+           	<ImageView
+           		android:id="@+id/congrats_img"
+           		android:layout_width="100dp"
+           		android:layout_height="342dp"
+           		android:src="@drawable/pencil1"/>
+             <TextView
+                android:id="@+id/congrats_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="14dp"
+                android:text="@string/congrats_msg"
+                android:gravity="left"/>
+        </LinearLayout>        
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/backgroundIWant">
+    <RelativeLayout 
+        android:id="@+id/highscore_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/highscore_header" 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            
+            <LinearLayout 
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                
+            </LinearLayout>
+ 			<Button 
+    	           android:layout_width="0dp"
+    	           android:layout_height="match_parent"
+    	           android:layout_weight="3"
+    	           android:background="@color/morpankhi"
+    	           android:text="@string/text_highscore"
+    	           android:textColor="@color/White"
+    	           android:textSize="26dp"
+    	           />
+ 			<LinearLayout 
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </LinearLayout>
+    	                     
+ 			      
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/highscore_mid"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/highscore_header">
+            <ImageView 
+                android:id="@+id/highscore_img"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/pencil1_v"/>
+
+            <LinearLayout
+                android:id="@+id/highscore_msg_box"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+               
+                <TextView
+                    android:id="@+id/gameScore"
+                    android:text="@string/score_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                </TextView>	
+                <TextView
+                    android:id="@+id/highscore_msg_score"
+                    android:text="@string/highscore_msg_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                </TextView>
+                
+                <TextView
+                    android:id="@+id/pencil_msg"
+                    android:text="@string/highscore_msg_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                </TextView>
+                
+                <TextView
+                    android:id="@+id/try_next_level"
+                    android:text="@string/highscore_msg_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                </TextView> 
+                
+                <TextView
+                    android:text="@string/highscore_msg_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                </TextView>
+                
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

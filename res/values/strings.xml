@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Math Blitz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_play">Pencil Quest</string>
+    <string name="text_instructions">Instructions</string>
+    <string name="text_highscore">High Score</string>
+    <string name="welcome_msg">"Hey there! Welcome to Math Blitz!"</string>
+    <string name="congrats_msg">Score : 0 YELLOW Pencil Unlocked</string>
+    <string name="instructions_1">Math Blitz is exactly what it’s name
+suggests. A quick, fun way to play math!
+</string>
+	<string name="text_congrats">Congrats!</string>
+<string name="instructions_2">
+    
+As soon as the gameplay begins, 
+you will be prompted with a math
+problem to solve. Once done, you 
+can hit enter. 
+</string>
+<string name="instructions_3">
+    Your goal is to solve these problems quickly and correctly!
+    They get tougher as you go along!
+    The game ends when you give 3 wrong answers. 
+    See if you can make it to the revered BLACK Pencil!
+</string>
+<string name="instructions_4">
+But be quick!, You’ll have only 7 
+seconds to solve it! Too many 
+misses and you shall NOT Pass! 
+</string>
+<string name="footer_left">
+    Have Fun!
+</string>
+<string name="footer_right">
+    Developer
+</string>
+	<string name="note_text"></string>
+	<string name="highscore_msg_1">HighScore : 0</string>
+	<string name="highscore_msg_2">Based on the high score and your performance in the game, you currently own a YELLOW pencil!</string>
+	<string name="highscore_msg_3">Try getting to the next level, which is&#8230; Well we don\'t know! You find out!</string>
+	<string name="highscore_msg_4">We\'ll update your pencil status when you make it ! Keep playing math!</string>
+	<string name="score_msg">Your score this time around was 0</string>
+</resources>
